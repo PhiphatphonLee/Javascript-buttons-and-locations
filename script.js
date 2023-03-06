@@ -18,29 +18,35 @@ function homeBT3() {
     }
 }   
 
-function aboutMeBT1() {
-    var text = "Hi!";
-    document.querySelector("#aboutMetxt").innerHTML = text;
+function aboutMeBT1(color) {
+    document.body.style.background = color;
 }
-function aboutMeBT2() {
-    var text = "Hi Hi!";
-    document.querySelector("#aboutMetxt2").innerHTML = text;
+function aboutMeBT2(color) {
+    document.body.style.background = color;
 }
-function aboutMeBT3() {
-    var text = "Hi Hi Hi!";
-    document.querySelector("#aboutMetxt3").innerHTML = text;
+function aboutMeBT3(color) {
+    document.body.style.background = color;
 }
 
 function locationBT1() {
-    setTimeout(aboutMeBT1, 3000);
+    setTimeout(function location1() {
+        var text = "Hi"
+        document.querySelector("#aboutMetxt").innerHTML = text;
+    }, 3000);
 }
 
 function locationBT2() {
-    setTimeout(aboutMeBT2, 4000);
+    setTimeout(function location2() {
+        var text = "Hi Hi!"
+        document.querySelector("#aboutMetxt2").innerHTML = text;
+    }, 4000);
 }
 
 function locationBT3() {
-    setTimeout(aboutMeBT3, 5000);
+    setTimeout(function location3() {
+        var text = "Hi Hi Hi!"
+        document.querySelector("#aboutMetxt3").innerHTML = text;
+    }, 5000);
 }
 
 function orderBT1() {
@@ -61,7 +67,7 @@ function orderBT3() {
     setInterval(displayMessage, 6500);
    
    
-     var timeleft = 6;
+     var timeleft = 11;
        var downloadTimer = setInterval(function(){
        timeleft--;
        document.getElementById("aboutMetxt3").textContent = timeleft;

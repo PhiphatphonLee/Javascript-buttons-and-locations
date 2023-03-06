@@ -3,20 +3,17 @@
 <head>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="aboutme">
     <nav>
-        <a href="./index.html">Home</a>
-        <a href="./aboutMe.html">About Me</a>
-        <a href="./findMe.html">Locations</a>
-        <a href="./orderGoods.html">Order Goods</a>
+        <a class="aboutme" href="./index.html">Home</a>
+        <a class="aboutme" href="./aboutMe.html">About Me</a>
+        <a class="aboutme" href="./findMe.html">Locations</a>
+        <a class="aboutme" href="./orderGoods.html">Order Goods</a>
     </nav>
     <div>
-        <button class="homeBT" id="aboutMeBT1" onclick="aboutMeBT1()">click me!</button>
-        <p id="aboutMetxt"></p>
-        <button class="homeBT" id="aboutMeBT2" onclick="aboutMeBT2()">click me2!</button>
-        <p id="aboutMetxt2"></p>
-        <button class="homeBT" id="aboutMeBT3" onclick="aboutMeBT3()">click me3!</button>
-        <p id="aboutMetxt3"></p>
+        <button class="homeBT" id="aboutMeBT1" onclick="aboutMeBT1('thistle')">click me!</button>
+        <button class="homeBT" id="aboutMeBT2" onclick="aboutMeBT2('tomato')">click me2!</button>
+        <button class="homeBT" id="aboutMeBT3" onclick="aboutMeBT3('springgreen')">click me3!</button>
     </div>
     
     <script src="./script.js"></script>
