@@ -27,8 +27,11 @@ div {
 }
 
 .homeBT {
-    width: 100px;
     height: 30px;
     border-radius: 10px;
     margin: 20px 0px;
+}
+
+p {
+    color: black;
 }
